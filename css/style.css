@@ -1,0 +1,210 @@
+/* Universal reset to remove margin, padding and set box-sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Header styles */
+header {
+  width: 100%;
+  background-color: #666666;
+  height: 5rem;
+}
+/* Main container styles */
+.container {
+  width: 100%;
+  max-width: 120rem;
+  padding: 3% 5%;
+  margin: 0 auto;
+}
+/* Flex layout for the main content */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+}
+/* Right section styling */
+.right-secion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  flex: 2;
+  width: 100%;
+}
+/* Left section styling */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  flex: 1;
+  width: 100%;
+}
+/* Tab navigation styles */
+.tap {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.tap > div {
+  width: 10rem;
+  max-width: 30%;
+  background-color: #c6c6c6;
+  height: 2.4rem;
+}
+/* Active tab styling */
+.tap > .active {
+  background-color: #666666;
+}
+/* Tab content area */
+.tap-content {
+  width: 100%;
+  background-color: #666666;
+  height: 23rem;
+}
+/* Bottom-right item grid layout */
+.bottom-right {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+/* Individual item block in the bottom-right section */
+.item-view {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  max-width: 22%;
+  gap: 0.5rem;
+}
+.item-view > div:nth-child(1) {
+  width: 100%;
+  background-color: #c6c6c6;
+  height: 9rem;
+}
+.item-view > div:nth-child(2) {
+  width: 100%;
+  background-color: #e4e4e4;
+  height: 1rem;
+}
+.bottom-item-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.bottom-item-view > div:nth-child(1) {
+  background-color: #e4e4e4;
+  height: 1rem;
+  width: 75%;
+}
+.bottom-item-view > div:nth-child(2) {
+  background-color: #e4e4e4;
+  height: 1rem;
+  width: 25%;
+}
+/* Top-left layout styles */
+.top-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.top-left > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 0.5rem;
+}
+.top-left > div:nth-child(1) > div {
+  width: 3rem;
+  height: 2.1rem;
+  background-color: #c6c6c6;
+}
+.top-left > div:nth-child(2) {
+  width: 100%;
+  height: 22.8rem;
+  background-color: #999999;
+}
+/* Bottom-left section layout */
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bottom-left > div:nth-child(1) {
+  background-color: #999999;
+  width: 100%;
+  height: 2.5rem;
+}
+.bottom-left-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bottom-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.bottom-left-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.bottom-left-item > div:nth-child(1) {
+  flex: 1;
+  height: 6rem;
+  min-height: 100%;
+  width: 100%;
+  background-color: #c6c6c6;
+}
+.bottom-left-item > div:nth-child(2) {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+.bottom-left-item > div:nth-child(2) > div {
+  background-color: #e4e4e4;
+  width: 100%;
+  height: 0.8rem;
+}
+.bottom-left-item > div:nth-child(3) {
+  background-color: #e4e4e4;
+  width: 100%;
+  height: 0.8rem;
+}
+.bottom-view > div:nth-child(2) {
+  background-color: #e4e4e4;
+  width: 100%;
+  height: 0.8rem;
+}
+.bottom-line {
+  height: 0.4rem;
+  background-color: #b9b9b9;
+}
+/* Footer styling */
+footer {
+  background-color: #e6e3e5;
+  width: 100%;
+  height: 3rem;
+}
+/* Responsive media queries */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .item-view {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 2% 3%;
+  }
+}
